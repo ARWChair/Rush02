@@ -3,34 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vnauschn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ekaltenb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 12:47:16 by vnauschn          #+#    #+#             */
-/*   Updated: 2022/09/15 15:48:07 by vnauschn         ###   ########.fr       */
+/*   Updated: 2022/09/17 21:59:42 by ekaltenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
-int	ft_iterative_power(int nb, int power)
-{
-	int	equal;
 
-	equal = 1;
-	if (power < 0)
-		return (0);
-	while (power > 0)
-	{
-		equal = equal * nb;
-		power--;
-	}
-	return (equal);
-}
+int	ft_iterative_power(int nb, int power);
+
 
 void	ft_putnbr(int nb)
 {
